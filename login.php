@@ -14,7 +14,7 @@
                         <br>
                         <input type="password" = name="password" placeholder="Passwort">
                         <br>
-                        <button type="submit" name="submit">Einloggen</button>
+                        <button type="submit" name="login-submit">Einloggen</button>
                 </form>
                 </div>
         </body>

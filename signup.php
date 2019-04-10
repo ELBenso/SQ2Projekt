@@ -14,11 +14,11 @@
                         <br>
                         <input type="email" name="email" placeholder="Email">
                         <br>
-                        <input type="email" name="email" placeholder="Email Wiederholen">
+                        <input type="password" name="password1" placeholder="Passwort">
                         <br>
-                        <input type="password" = name="password" placeholder="Passwort">
+                        <input type="password" = name="password2" placeholder="Passwort Wiederholen">
                         <br>
-                        <button type="submit" name="submit">Registrieren</button>
+                        <button type="submit" name="signup-submit">Registrieren</button>
                 </form>
                 </div>
         </body>
