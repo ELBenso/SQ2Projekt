@@ -8,6 +8,7 @@
         </head>
         <body>
                 <div id="content">
+                <div class="container">
                         <h1>Willkommen zu deiner To-Do Liste</h1>
                         <form action="login.php">
                                 <input type="submit" value="Einloggen" />
@@ -15,6 +16,7 @@
                         <form action="signup.php">
                                 <input type="submit" value="Registrieren" />
                         </form>
+                </div>
                 </div>
         </body>
 </html>

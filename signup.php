@@ -7,6 +7,7 @@
                 <link rel="stylesheet" href="./css/stylesheet.css">
         </head>
         <body>
+                <div class="container">
                 <div id="content">
                         <h1>REGISTRIERUNGS BEREICH</h1>
                         <form action="php/signup.inc.php" method="POST">
@@ -20,6 +21,7 @@
                         <br>
                         <button type="submit" name="signup-submit">Registrieren</button>
                 </form>
+                </div>
                 </div>
         </body>
 </html>
