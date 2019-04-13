@@ -10,14 +10,14 @@
                 <div id="content">
                 <div class="container">
                         <h1>LOGIN BEREICH</h1>
-                        <!--<form action="php/login.inc.php" method="POST">
+                        <form action="php/login.inc.php" method="POST">
                         <input type="username" name="username" placeholder="Benutzername">
                         <br>
                         <input type="password" = name="password" placeholder="Passwort">
                         <br>
-                        <button type="submit" name="login-submit">Einloggen</button>-->
+                        <button type="submit" name="login-submit">Einloggen</button>
                         <form action="index.php">
-                                <input type="submit" name="skip">
+                                <input type="submit" name="skip" value="Überspringen">
                         </form>
                 </form>
                 </div>

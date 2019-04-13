@@ -45,7 +45,7 @@
                         var t = document.createTextNode(inputValue);
                         li.appendChild(t);
                         if (inputValue === '') {
-                                alert("You must write something!");
+                                alert("Das Feld darf nicht leer bleiben!");
                         } else {
                                 document.getElementById("myUL").appendChild(li);
                         }
@@ -67,25 +67,30 @@
                 </script>
         </head>
         <body>
+                <div id="mainpage">
                 <div class="container">
                         <div class="menu" onclick="dropFunction(this)">
                                 <div class="bar1"></div>
                                 <div class="bar2"></div>
                                 <div class="bar3"></div>
                                 <ul id="dropdown">
-                                        <li>Home</li>
-                                        <li>Statistik</li>
-                                        <li>Einstellungen</li>
+                                        <li><a href="index.php">Home</a></li>
+                                        <li><a href="statistik.php">Statistik</a></li>
+                                        <li><a href="motivation.php">Motivation</a></li>
+                                        <li><a href="notenschnitt.php">Notenschnitt</a></li>
+                                        <li><a href="einstellungen.php">Einstellungen</a></li>
                                 </ul>
                         </div>
+                        <section id="list">
                         <div id="myDIV" class="header">
-                          <input type="text" id="myInput" placeholder="Was möchtest du als nächstes tun?...">
-                          <span onclick="newElement()" class="addBtn">Hinzufügen</span>
+                          <input type="text" id="myInput" placeholder="Was möchtest du als nächstes tun?..." class="listInput">
+                          <span onclick="newElement()" class="addBtn">↓</span>
                         </div>
 
                         <ul id="myUL">
                         </ul>
-
+                        </section>
+                </div>
                 </div>
         </body>
 </html>

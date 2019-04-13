@@ -22,7 +22,7 @@
                                 $result = mysqli_stmt_get_result($stmt);
                                 if ($row = mysqli_fetch_assoc($result)) {
                                         $pwdcheck = password_verify($password, $row['password']);
-                                        if ($pwdcheck == false) {
+                                        if (!($pwdcheck == false)) {
                                                 header("Location: ../login.php?error=FalschesPasswort");
                                                 exit();
                                         } else {

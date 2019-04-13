@@ -10,7 +10,7 @@
                 <div class="container">
                 <div id="content">
                         <h1>REGISTRIERUNGS BEREICH</h1>
-                        <form action="php/signup.inc.php" method="POST">
+                        <form action="php/signup.inc.php" id="register" method="POST">
                         <input type="username" name="username" placeholder="Benutzername">
                         <br>
                         <input type="email" name="email" placeholder="Email">
