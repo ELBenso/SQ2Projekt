@@ -257,3 +257,7 @@ ul {
 #notenschnittpage #del input[type="submit"] {
         border: 1px solid red;
 }
+
+#notenschnittpage #dynamic {
+        margin-bottom: 15px;
+}

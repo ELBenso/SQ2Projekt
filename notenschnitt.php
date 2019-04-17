@@ -28,8 +28,23 @@
                                 </ul>
                         </div>
                 <h1>Mein Notenschnitt</h1>
+                <div id="dynamic">
+                <?php
+                $displaynote = 0;
+                $displaylp = 0;
+                require './php/connection.inc.php';
+                $sql = "SELECT lp, note FROM notenliste";
+                $result = mysqli_query($conn, $sql);
+                $row = mysqli_fetch_assoc($result);
+                if ($row["lp"] > 0) {
+                        $displaynote = $row["note"] / $row["lp"];
+                }
+                $displaylp = $row["lp"] + $displaylp;
+                echo "Du hast " . $displaylp. " Leistungspunkte und einen Schnitt von " . number_format((float)$displaynote, 2, '.', '')."<br>";
+                ?>
+                </div>
                 <form class="" action="./php/notenschnitt.inc.php" method="post">
-                        <span id="schriftns1">Note</span><input type="number" name="note" placeholder="Note..."><br>
+                        <span id="schriftns1">Note</span><input type="number" name="note" placeholder="Note..." step="0.01"><br>
                         <span id="schriftns2">ECTS</span><input type="number" name="lp" placeholder="LP..."><br>
                         <input type="submit" name="submit-ns" value="Aktualisieren">
                 </form>

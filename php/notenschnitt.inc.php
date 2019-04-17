@@ -14,10 +14,12 @@ if (isset($_POST['submit-ns'])) {
                 exit();
         } else {
                 $inputnote = $note * $lp;
-                $sql = "SELECT lp FROM notenliste;";
+                $check = "SELECT lp FROM notenliste;";
+                $row = mysqli_fetch_assoc($check);
+                $sql = "SELECT lp FROM notenliste WHERE lp > 0;";
                 $result = $conn->query($sql);
-                $row = mysqli_fetch_array($result, MYSQLI_ASSOC);
-                if (false) {
+                $num_rows = mysqli_num_rows($result);
+                if ($num_rows == 0 && $row["lp"] == NULL) {
                         $sql = "INSERT INTO notenliste VALUES ($inputnote, $lp);";
                         if ($conn->query($sql) === TRUE) {
                                 header("Location: ../notenschnitt.php?success1");
@@ -27,14 +29,11 @@ if (isset($_POST['submit-ns'])) {
                                 exit();
                         }
                 } else {
-                        $resultlp = "SELECT lp FROM notenliste;";
-                        $resultnote = "SELECT note FROM notenliste;";
-                        $input = $resultlp + $lp;
-                        $sql = "UPDATE notenliste SET lp = $input;";
-                        if ($conn->query($sql) === TRUE) {
-                                $input = $resultnote + $lp * $note;
-                                $sql = "UPDATE notenliste SET note = $input;";
-                                if ($conn->query($sql) === TRUE) {
+                        $sql = "UPDATE notenliste SET lp = lp + $lp;";
+                        if ($conn->query($sql) == TRUE) {
+                                $input = $lp * $note;
+                                $sql = "UPDATE notenliste SET note = note + $input;";
+                                if ($conn->query($sql) == TRUE) {
                                         header("Location: ../notenschnitt.php?success2");
                                         exit();
                                 } else {
