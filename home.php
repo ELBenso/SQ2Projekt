@@ -2,9 +2,10 @@
 <html lang="en" dir="ltr">
         <head>
                 <meta charset="utf-8">
-                <title>Home</title>
+                <title>Willkommen</title>
                 <meta name="viewport" content="width=device-width, initial-scale=1">
                 <link rel="stylesheet" href="./css/stylesheet.css">
+                <link rel="icon" href="./img/logohacken.jpg">
         </head>
         <body>
                 <div class="container">

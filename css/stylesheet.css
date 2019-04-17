@@ -237,3 +237,23 @@ ul {
         left: 50%;
         font-family: 'Quicksand', sans-serif;
 }
+
+/*notenschnitt*/
+#notenschnittpage input[type='number'] {
+        width: 50px;
+        height: 30px;
+        margin-bottom: 15px;
+        margin-left: 10px;
+        font-family: 'Quicksand', sans-serif;
+}
+
+#notenschnittpage input[type='submit'] {
+        width: 100px;
+        height: 30px;
+        margin-bottom: 5px;
+        font-family: 'Quicksand', sans-serif;
+}
+
+#notenschnittpage #del input[type="submit"] {
+        border: 1px solid red;
+}

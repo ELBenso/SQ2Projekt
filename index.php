@@ -5,6 +5,7 @@
                 <title>Home</title>
                 <meta name="viewport" content="width=device-width, initial-scale=1">
                 <link rel="stylesheet" href="./css/stylesheet.css">
+                <link rel="icon" href="./img/logohacken.jpg">
                 <script>
                 function dropFunction(x) {
                         x.classList.toggle("change");
@@ -86,7 +87,6 @@
                           <input type="text" id="myInput" placeholder="Was möchtest du als nächstes tun?..." class="listInput">
                           <span onclick="newElement()" class="addBtn">↓</span>
                         </div>
-
                         <ul id="myUL">
                         </ul>
                         </section>

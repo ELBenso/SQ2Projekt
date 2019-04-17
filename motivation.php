@@ -2,9 +2,10 @@
 <html lang="en" dir="ltr">
         <head>
                 <meta charset="utf-8">
-                <title>Home</title>
+                <title>Motivation</title>
                 <meta name="viewport" content="width=device-width, initial-scale=1">
                 <link rel="stylesheet" href="./css/stylesheet.css">
+                <link rel="icon" href="./img/logohacken.jpg">
                 <script>
                 function dropFunction(x) {
                         x.classList.toggle("change");
@@ -12,7 +13,7 @@
                 </script>
         </head>
         <body>
-                <div id="mainpage">
+                <div id="motivationpage">
                 <div class="container">
                         <div class="menu" onclick="dropFunction(this)">
                                 <div class="bar1"></div>
