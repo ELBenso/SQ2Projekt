@@ -12,7 +12,7 @@ h1 {
         color: white;
 }
 
-a {
+#dropdown a {
         text-decoration: none;
 }
 
@@ -76,7 +76,7 @@ a {
   transform: rotate(45deg) translate(-8px, -8px);
 }
 
-ul {
+#dropdown ul {
         list-style: none;
         padding: 0;
 }
@@ -260,4 +260,65 @@ ul {
 
 #notenschnittpage #dynamic {
         margin-bottom: 15px;
+}
+
+/* Index */
+
+#indexpage input {
+  margin: 0;
+  border: none;
+  border-radius: 0;
+  width: 60%;
+  padding: 10px;
+  font-size: 16px;
+}
+
+#indexpage button {
+        width: 38px;
+        height: 38px;
+        border: none;
+}
+
+#indexpage button:hover {
+        background-color: cyan;
+        color: white;
+}
+
+
+#indexpage table {
+        width: 80px;
+        margin: 30px auto;
+        border-collapse: collapse;
+}
+
+#indexpage tr {
+        border-bottom: 1px solid black;
+}
+
+#indexpage th {
+        font-size: 19px;
+}
+
+#indexpage th, td {
+        border: none;
+        height: 30px;
+        padding: 2px;
+}
+
+#indexpage tr:hover {
+        background: yellowgreen;
+}
+
+#indexpage .task {
+        text-align: left;
+        width: 200px;
+}
+
+#indexpage .delete {
+        text-align: center;
+}
+
+#indexpage .delete a {
+        color: white;
+        text-decoration: none;
 }
